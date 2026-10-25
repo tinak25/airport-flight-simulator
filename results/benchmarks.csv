@@ -1,0 +1,25 @@
+# Linux x86_64, 2 logical cores, median of 5 runs
+experiment,version,ranks,consumers,lock,work,seconds
+lock,sequential,1,0,-,100000,1.7138
+lock,concurrent,1,1,held,100000,1.81356
+lock,concurrent,1,2,held,100000,1.8443
+lock,concurrent,1,4,held,100000,1.84923
+lock,concurrent,1,1,shared,100000,1.8281
+lock,concurrent,1,2,shared,100000,0.932924
+lock,concurrent,1,4,shared,100000,0.953634
+lock,concurrent,1,1,local,100000,1.82935
+lock,concurrent,1,2,local,100000,0.935649
+lock,concurrent,1,4,local,100000,0.933554
+granularity,sequential,1,0,-,100,0.001591
+granularity,concurrent,1,2,local,100,0.065593
+granularity,sequential,1,0,-,1000,0.016955
+granularity,concurrent,1,2,local,1000,0.087905
+granularity,sequential,1,0,-,10000,0.171053
+granularity,concurrent,1,2,local,10000,0.1639
+granularity,sequential,1,0,-,100000,1.71678
+granularity,concurrent,1,2,local,100000,0.94
+mpi,sequential,1,0,-,100000,1.71191
+mpi,mpi,1,0,-,100000,1.70998
+mpi,mpi,2,0,-,100000,1.00061
+mpi,hybrid,1,2,local,100000,0.941102
+mpi,hybrid,2,1,local,100000,1.03176
