@@ -11,7 +11,7 @@ A simulator of an airport's flight-processing system, built four ways on the sam
 
 Every terminal generates a stream of flights (airline, gate, passengers, status, delay). The system reports passengers, delays and cancellations, the **top N busiest terminals**, passengers and on-time rate per airline, and the busiest gate.
 
-I designed and built this as the final project for a university course on concurrent and distributed programming (the smaller assignments from the same course are in [parallel-programming-cpp](https://github.com/tinak25/parallel-programming-cpp)). This repo is a rebuilt version. When I reviewed my original code, I found that the speed-ups in it were not real, and that one of the versions had a locking bug. Both are explained below, because finding them taught me more than writing the first version did.
+I designed and built this as the final project for a university course on concurrent and distributed programming (the smaller assignments from the same course are in [parallel-programming-cpp](https://github.com/tinak25/parallel-programming-cpp)). When I reviewed my original code, I found that the speed-ups in it were not real, and that one of the versions had a locking bug. Both are explained below, because finding them taught me more than writing the first version did.
 
 ## Design
 
